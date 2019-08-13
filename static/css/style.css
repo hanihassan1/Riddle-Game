@@ -1,0 +1,9 @@
+body {
+    background-color:black;
+}
+
+.main_card {
+    display: inline-block;
+    column-break-inside: avoid;
+    
+}
