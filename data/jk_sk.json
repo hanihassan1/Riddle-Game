@@ -1,0 +1,15 @@
+[{
+    "question": "If there are four apples and you take away three, how many do you have?",
+    "answer": "3"
+
+
+},
+{
+    "question":"If you buy a rooster for the purpose of laying eggs and you expect to get three eggs each day for breakfast, how many eggs will you have after three weeks?",
+    "answer": "0"
+},
+{ 
+    "question":"There are 2 ants in front of 2 other ants, 2 ants behind 2 ants and 2 ants next to 2 ants. How many total ants are there?",
+    "answer": "4"
+   
+}]
