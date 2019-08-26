@@ -1,1 +1,1 @@
-echo web: Python run.py
+web: Python run.py
