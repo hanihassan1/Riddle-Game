@@ -8,9 +8,10 @@
 <div class="container-flud">
   <div class="row no-gutters">
     
-    <div class="col-sm-4 lead-homebt"><a href="https://9756ebca0b6a461ca3515f5d51d978ee.vfs.cloud9.us-east-1.amazonaws.com">Home</a></div>
+    <div class="col-sm-4 lead-homebt"><a href="https://9756ebca0b6a461ca3515f5d51d978ee.vfs.cloud9.us-east-1.amazonaws.com" class="newgame">New Game</a></div>
     <div class="col-sm-4">
-      <h2 class="lead-head">Leadership Board</h2>
+      <h2 class="lead-head">Leadership Board  <i class="fas fa-trophy"></i></h2>
+      
     </div>
     <div class="col-sm-4"></div>
   </div>
@@ -31,8 +32,8 @@
         {% for i in range(0, username|length)|reverse %}
         {% if i == username|length -1 %}
         <tr class="table-primary">
-          <th scope="row">{{username[i]}}</th>
-          <td>{{score[i]}}</td>
+          <th scope="row" class="winner"><i class="fas fa-medal"></i>  {{username[i]}}</th>
+          <td class="winner">{{score[i]}}</td>
           {% else %}
           <tr class="table-secondary">
           <th scope="row">{{username[i]}}</th>

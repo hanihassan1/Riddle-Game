@@ -1,14 +1,18 @@
+/*--------------------------------------------fonts*/
 @import url('https://fonts.googleapis.com/css?family=Varela+Round:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Cantarell:700i:100,200,300,400,500,600,700|EXO:100,200,300,400,500,600,700');
-
+/*--------------------------------------------body & html styles*/
 body {
     font-family: 'Varela Round', sans-serif;
-    background-color:#57D62C;
-    height: 100vh;
+    height: 100%;
+    background-image: url(../images/park-troopers-RAtKWVlfdf4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
    
-}
-html {
- scroll-behavior: smooth;
 }
 
 .hide {
@@ -23,32 +27,7 @@ a {
 html {
  scroll-behavior: smooth;
 }
- 
-/*header*/
-#logoOne  {
-  border-radius: 15%;
-}
 
-.game_name {
-  text-align:center;
-     padding-bottom: 25px;
-     
-}
-
-
-/*index*/
-
-.signin  {
-  color:#007bff;
- 
-}
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  padding: 0;
-  margin: 0;
-}
 
 small {
   font-size: 12px;
@@ -85,10 +64,41 @@ h2 {
 section {
   height: 100vh;
 }
+ 
+/*--------------------------------------------index--form &logo*/
+#logoOne  {
+  border-radius: 15%;
+  opacity: .6;
+}
 
-/* NAV */
+.game_name {
+  text-align:center;
+     padding-bottom: 25px;
+     
+}
+
+.signin  {
+  color:#007bff;
+ 
+}
 
 
+/*--------------------------------------------nav & Question card*/
+
+@media only screen and (max-width: 480px) {  
+    body {  
+          max-width: 480px;  
+    }  
+    .card_row   {  
+          font-size:14px!important;  
+    }  
+} 
+
+.active {
+  background-color:#F1C40F;
+}
+
+ 
 nav {
   width: 80%;
   margin: 0 auto;
@@ -158,8 +168,6 @@ nav.shift ul li a:hover:after {
 
 }
 
-
-/* form-index */
 #sendMessageButton1     {
     opacity: 9;
      background-color: #A9A9A9;
@@ -167,7 +175,7 @@ nav.shift ul li a:hover:after {
     color: #484848;
 }
 .sect  {
-      height: 100vh;
+      height: 96vh;
 
 }
 .form-edit  {
@@ -191,24 +199,22 @@ nav.shift ul li a:hover:after {
 }
 
 
-.card_row   {
-  /*margin-left:28%;*/
-  /*margin-top:10px;*/
-}
+/*--------------------------------------------nav & Question card*/
 
-
-.card-body {  
-
-}
-
-/*footer*/
-
+@media only screen and (max-width: 1024px) {  
+    body {  
+          max-width: 10248px;  
+    }  
+    .foot-edit {  
+          display: none  
+    }  
+} 
 
 
 .footer-name {
   text-align:center;
   padding-left:150px;
-  font-size:30px;
+  font-size:25px;
   text-shadow: 2px 2px 30px #007bff;
  
 }
@@ -216,19 +222,22 @@ nav.shift ul li a:hover:after {
 
 .foot-edit  {
   border-top:1px solid blue;
+  background: #F1C40F
 }
 
-
+/*--------------------------------------------Leadership page*/
 
 .lead-head  {
   text-align:center;
-   font-family: 'Roboto', sans-serif;
   font-size:30px;
    color:#007bff;
+   font-weight: 700;
+   font-family: 'Varela Round', sans-serif;
+    text-decoration: underline;
 }
 
 .lead-backg {
-    height: 73vh;
+     height: 77vh;
 }
 
 
@@ -241,8 +250,23 @@ nav.shift ul li a:hover:after {
 .lead-homebt {
  font-size:30px;
  padding-bottom:50px;
+
+ font-family: 'Varela Round', sans-serif;
+ 
 }
 
-.active {
-  background-color: red;
+.newgame {
+   background-color: #16D540!important;
+   color:white;
+}
+.fas  {
+  color:orange!important;
+  font-size:40px;
+}
+.fa-medal  {
+  font-size:20px!important;
+}
+
+.winner  {
+  color:#16D540;
 }
